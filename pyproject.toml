@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "macrofortress"
+version = "0.1.0"
+description = "Dwarf Fortress macro utility"
+authors = ["Zeevo <8338013+zeevo@users.noreply.github.com>"]
+license = "GPL"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+opencv-python = "^4.7.0.68"
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+cli = "macrofortress.cli:cli"
